@@ -1,0 +1,37 @@
+html {
+	font-family: "Helvetica Neue", "Lucida Grande", Verdana, sans-serif;
+	line-height: 1.2;
+	@include prefix(transition, 0.5s ease);
+}
+body {
+	padding: 50px;
+	color: #666;
+	background: #ccc;
+}
+/* Tablet vertical */		
+@media only screen and (max-width : 770px) {
+	html {
+		font-size: 1.2rem;
+	}
+	.col_12, 
+	.col_11, 
+	.col_10, 
+	.col_9, 
+	.col_8, 
+	.col_7, 
+	.col_6, 
+	.col_5, 
+	.col_4, 
+	.col_3, 
+	.col_2, 
+	.col_1 {
+			width: 100%;
+	}
+}
+
+/* Smartphone vertical */		
+@media only screen and (max-width : 500px) {
+	html {
+		font-size: 1.4rem;
+	}
+}
