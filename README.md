@@ -1,2 +1,2 @@
-happybirtday
+The Happybirthday AngularJS project
 ============
