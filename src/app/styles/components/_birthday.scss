@@ -1,0 +1,15 @@
+#birthday {
+	background: #fff;
+	padding: 15px;
+	@include afterFix();
+	.rotate {
+		width: 100%;
+		display: block;
+		/* height: 100%; */
+		top: 50%;
+		position: absolute;
+		margin-top: 100%;
+		@include prefix(transform, rotate(90deg));
+		font-size: 1.3rem;
+	}
+}

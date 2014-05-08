@@ -1,37 +1,32 @@
-html {
+* {
 	font-family: "Helvetica Neue", "Lucida Grande", Verdana, sans-serif;
-	line-height: 1.2;
+}
+html {
+	line-height: 1.4;
 	@include prefix(transition, 0.5s ease);
 }
 body {
-	padding: 50px;
 	color: #666;
-	background: #ccc;
 }
 /* Tablet vertical */		
 @media only screen and (max-width : 770px) {
 	html {
-		font-size: 1.2rem;
-	}
-	.col_12, 
-	.col_11, 
-	.col_10, 
-	.col_9, 
-	.col_8, 
-	.col_7, 
-	.col_6, 
-	.col_5, 
-	.col_4, 
-	.col_3, 
-	.col_2, 
-	.col_1 {
-			width: 100%;
+		font-size: 1.1rem;
 	}
 }
 
 /* Smartphone vertical */		
 @media only screen and (max-width : 500px) {
 	html {
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 	}
+}
+.container {
+	padding: 10px;
+}
+
+input[type="text"],
+textarea {
+	padding: 8px;
+	background: #fff;
 }

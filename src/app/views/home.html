@@ -1,0 +1,64 @@
+<header class="fixed">
+	<div class="large-12 columns center" id="button" ng-controller="bdButtonCtrl">
+		<button id="hide_editor" ng-click="hideEditor()">Hide editor</button>
+	</div>
+	<div id="header_editor">
+		<div class="large-12 columns center" id="intro">
+			<h3>Happybirthday</h3>
+			<p>Just an funny Happybirthday application</p>      		
+		</div>
+		<div class="large-12 column">
+			<form class="column">
+				<div class="large-4 columns">
+					<div class="large-12 column">
+						<strong>From</strong>					
+					</div>
+					<div class="large-12 column">
+						<label>Name</label>
+						<p><input type="text" name="" ng-model="hb_name_from" value="" placeholder=""></p>
+						<label>Email</label>
+						<p><input type="text" name="" ng-model="hb_email_from" value="" placeholder=""></p>
+					</div>
+				</div>
+				<div class="large-8 columns">
+					<div class="large-12 column">
+						<strong>To</strong>					
+					</div>
+					<div class="large-6 columns">
+						<label>Name</label>
+						<p><input type="text" name="" ng-model="hb_name_to" value="" placeholder=""></p>
+						<label>Date of birth</label>
+						<p><input type="text" name="" ng-model="hb_date_of_birth" value="" placeholder=""></p>					
+					</div>
+					<div class="large-6 columns">
+						<label>Title</label>
+						<p><input type="text" name="" ng-model="hb_title" value="" placeholder=""></p>					
+						<label>Message</label>
+						<p><textarea ng-model="hb_message"></textarea></p>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</header>
+<div id="content" class="large-12 column">
+	<div class="large-8 large-centered columns" id="birthday">
+		<div class="large-12 column" ng-controller="bdFormCtrl">
+			<pre class="myUrl">{{currentUrl.origin}}/{{currentUrl.hash}}?hb_name_to={{hb_name_to}}&hb_name_from={{hb_name_from}}&hb_date_of_birth={{hb_date_of_birth}}&hb_title={{hb_title}}&hb_email_from={{hb_email_from}}&hb_message={{hb_message}}</pre>
+		</div>
+		<div class="large-5 columns">
+			<h5>Dear {{hb_name_to}}</h5>
+			<p>Cupcake ipsum dolor sit. Amet chocolate cake candy apple pie applicake. I love cupcake lemon drops jelly-o. Apple pie gingerbread I love oat cake soufflé lemon drops. Cake cotton candy caramels muffin pie cake I love. Macaroon fruitcake croissant. I love bear claw I love I love pastry candy.</p>
+			<p>~<small>{{hb_name_from}}</small>~</p>			
+		</div>
+		<div class="large-2 columns"><span class="rotate">{{hb_date_of_birth}}</span></div>
+		<div class="large-5 columns">
+			<h5>{{hb_title}}</h5>
+			<ul>
+				<li><strong>{{hb_name_from}}</strong></li>
+				<li>{{hb_email_from}}</li>
+			</ul>
+		</div>
+	</div>
+</div>
+

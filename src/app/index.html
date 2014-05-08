@@ -9,21 +9,21 @@
     <link rel="stylesheet" href="/css/app.css">
     <!-- endinject -->
   </head>
-  <body>
-    <hgroup>
-      <h1>Happybirthday</h1>
-      <h2>Your new AngularJS app is now ready...</h2>
-    </hgroup>
-    <p>
-      Just an funny Happybirthday application
-    </p>
-    <ng-view></ng-view>
+  <body class="body">
+  <div class="container">
+    <ng-view></ng-view>    
+  </div>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://d3js.org/colorbrewer.v1.min.js"></script>
     <!-- inject:vendor:js -->
     <script src="/angular/angular.js"></script>
     <script src="/angular-route/angular-route.js"></script>
+    <script src="/trianglify/trianglify.js"></script>
+    <script src="/jquery/dist/jquery.js"></script>
     <!-- endinject -->
     <!-- inject:js -->
     <script src="/app.js"></script>
+    <script src="/hbapp-templates.js"></script>
     <!-- endinject -->
   </body>
 </html>

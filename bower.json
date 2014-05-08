@@ -20,7 +20,9 @@
   ],
   "dependencies": {
     "angular": "~1.2.14",
-    "angular-route": "~1.2.14"
+    "angular-route": "~1.2.14",
+    "trianglify": "~0.1.2",
+    "jquery": "~2.1.1"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.14"

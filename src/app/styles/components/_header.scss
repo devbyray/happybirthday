@@ -1,0 +1,11 @@
+header {
+	background-color: #ccc;
+	&.fixed {
+		position: fixed;
+		bottom: 0; left: 0;
+		width: 100%;
+	}
+	#intro {
+		padding: 15px;
+	}
+}
